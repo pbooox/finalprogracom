@@ -50,7 +50,7 @@ class Pensum(models.Model):
 
     def __str__(self):
         """Unicode representation of Pensum."""
-        return self.pk
+        return str(self.pk)
 
 class DetallePensum (models.Model):
     pensum = models.ForeignKey(Pensum, on_delete=models.CASCADE)
